@@ -10,23 +10,54 @@
 	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM-Italic'), url('/docs/fonts/OFLGoudyStM-Italic.woff') format('woff'), url('/docs/fonts/OFLGoudyStM-Italic.ttf') format('truetype');
 }
 
-body { font-family: "OFLSortsMillGoudyRegular"; margin: 0; padding: 0; text-align: center; background-color: #eee; }
+body { font-family: "OFLSortsMillGoudyRegular"; margin: 0; padding: 0;  background-image: url("/images/pattern.png"); background-color: #FFFFF1; }
 header, article, section, aside, footer { display: block; }
 h1, h2, h3, h4, h5, h6, p { margin: 0; padding: 0; font-weight: normal; }
 a { color: inherit; text-decoration: none; }
-div#wrapper { margin: 3em auto 0; width: 600px; padding: 0 0 1em 0; }
-header#main { width: 500px; margin: 0 auto; }
-header#main h1 { text-transform: uppercase; text-shadow: 0px 2px 1px #CCC; font-size: 4em; margin: 0.3em 0; letter-spacing: 0.1em; line-height: 1.4em; }
+div#wrapper { margin: 2em auto 0; width: 550px; padding: 0 0 1em 0; }
+header#main { width: 550px; margin: 0 auto; text-align: center; border-bottom: 3px double rgba(0, 0, 0, 0.5); }
+header#main h1 { text-transform: uppercase; text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1); font-size: 4em; margin: 0.3em 0 0 0; letter-spacing: 0.1em; line-height: 1.4em; }
 header#main h1:first-line { font-size: 0.3em; line-height: 1.2em; }
-header#main h1 em { color: #C51020; font-style: normal; }
-header#main h1 span { font-style: italic; font-family: Times; font-size: 0.8em; text-transform: lowercase; line-height: 1; display: block; position: relative; top: -0.25em; }
-header#main h2 { font-family: "OFLSortsMillGoudyItalic"; font-style: italic; font-size: 1em; text-transform: lowercase; text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.8); letter-spacing: 0.1em; }
+header#main h1 em { color: #C51020; font-style: normal; display: block; }
+header#main h1 span { font-style: italic; font-family: Times, sans-serif; font-size: 0.8em; text-transform: lowercase; line-height: 1; display: block; position: relative; top: -0.25em; }
+header#main h2 { font-family: "OFLSortsMillGoudyItalic"; font-style: italic; font-size: 1em; text-transform: lowercase; letter-spacing: 0.1em; }
 header#main h3 { font-family: Times; color: #C51020; letter-spacing: 0.2em; font-size: 0.8em; text-transform: uppercase; }
 
-section#intro { border-top: 3px double rgba(0, 0, 0, 0.5); padding: 1em 0; }
-section#intro header { margin-bottom: 2em; }
-section#intro hgroup h2 { font-family: Times; text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.5em; color: #C51020; text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.8); }
-section#intro hgroup h3 { font-family: "OFLSortsMillGoudyItalic";  color: #666; font-size: 1em; font-style: italic; font-weight: normal; }
-section#intro p { margin-top: 0.5em; line-height: 1.5em; }
-section#intro a { color: #C51020; text-decoration: none; padding: 0; }
-section#intro a:hover { border-bottom: 1px dotted black; color: #444; -webkit-transition: all .2s ease-in; -moz-transition: all .2s ease-in; -o-transition: all .2s ease-in; transition: all .2s ease-in; }
+section#outline { margin: 0 auto; padding: 1em 0; width: 420px; overflow: hidden; }
+section#outline > header, section#outline > p { text-align: center; }
+section#outline p, section#outline legend, section#outline label, section#professional-details p { font-family: Times, sans-serif; margin: 1em 0; color: #444; line-height: 1.3em; }
+section#outline p a, section#professional-details p a { border-bottom: 1px dotted #9c9c9c; }
+section#outline p a:hover, section#professional-details p a:hover { color: #C51020; border-color: #C51020; }
+
+
+section#outline > header h1 { margin: 0.5em auto; font-family: "OFLSortsMillGoudyItalic"; font-style: italic; font-size: 1em; text-shadow: 1px 1px 1px white; }
+section#outline > header h2 { font-family: Times, sans-serif; color: #C51020; text-transform: uppercase; margin: 1em 0; font-size: 1.2em; letter-spacing: 0.1em; }
+section#outline > p { font-size: 0.9em; }
+
+section#outline header h3 { text-transform: uppercase; text-shadow: 1px 1px 1px white; font-size: 0.8em; letter-spacing: 0.1em; }
+section#outline header h3:first-letter { font-size: 120%; }
+section#outline header h3 em { font-family: "OFLSortsMillGoudyItalic"; font-style: italic; }
+
+section#outline aside, section#outline form { width: 200px; float: left; margin-top: 1em; line-height: 1.5em;}
+section#outline aside#pricing-location { margin-right: 20px; text-align: right; }
+section#outline aside#pricing-location h3:first-letter { margin-right: -0.12em; } /* The kerning on the W is fucked! */
+section#outline aside#pricing-location p strong { font-weight: normal; font-style: normal; font-size: 2em; color: #666; text-shadow: 1px 1px 1px white; }
+section#outline aside#pricing-location p.price { font-style: italic; }
+
+section#outline form#registration fieldset { border: 0; padding: 0;}
+section#outline form#registration legend { margin: 0; padding: 0; }
+section#outline form#registration label { font-style: italic; }
+section#outline aside > p, section#outline legend, section#outline label, section#professional-details p { font-size: 0.8em; }
+
+section#outline form#registration button { border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 0.3em 0.7em; font-size: 0.8em; color: #FFF; text-transform: uppercase; letter-spacing: 0.15em; background-color: #C51020; background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #C51020), color-stop(0.6, #B13333), color-stop(1, #B13333)); -webkit-transition: .2s linear; }
+section#outline form#registration button:after { content: " →"; }
+section#outline form#registration button:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-transition: .2s linear; }
+
+hr { border: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); clear: both; }
+
+section#professional-details { width: 420px; margin: 0 auto; }
+section#professional-details aside {  width: 200px; float: left; margin-top: 1em; }
+section#professional-details aside#author { text-align: right; margin-right: 20px; }
+
+section#professional-details h1 { text-transform: uppercase; text-shadow: 1px 1px 1px white; font-size: 0.7em; letter-spacing: 0.1em; }
+section#professional-details h1:first-letter { font-size: 110%; }
