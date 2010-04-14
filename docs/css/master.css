@@ -40,11 +40,14 @@ section#outline header h3 em { font-family: "OFLSortsMillGoudyItalic"; font-styl
 
 section#outline aside, section#outline form { width: 200px; float: left; margin-top: 1em; line-height: 1.5em;}
 section#outline aside#pricing-location { margin-right: 20px; text-align: right; }
-section#outline aside#pricing-location h3:first-letter { margin-right: -0.12em; } /* The kerning on the W is fucked! */
 section#outline aside#pricing-location p strong { font-weight: normal; font-style: normal; font-size: 2em; color: #666; text-shadow: 1px 1px 1px white; }
 section#outline aside#pricing-location p.price { font-style: italic; }
 
-section#outline form#registration fieldset { border: 0; padding: 0;}
+section#outline form#registration fieldset { border: 0; padding: 0; }
+section#outline form#registration fieldset.booked { position: relative; }
+
+section#outline form#registration fieldset.booked label time { color: #999; text-decoration: line-through; }
+
 section#outline form#registration legend { margin: 0; padding: 0; }
 section#outline form#registration label { font-style: italic; }
 section#outline aside > p, section#outline legend, section#outline label, section#professional-details p { font-size: 0.8em; }
