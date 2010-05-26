@@ -56,6 +56,10 @@ section#outline form#registration button { border: 0; -moz-border-radius: 5px; -
 section#outline form#registration button:after { content: " →"; }
 section#outline form#registration button:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-transition: .2s linear; }
 
+section#outline form#registration button:disabled { position: absolute; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; top: 1em; -webkit-transform:rotate(-30deg); cursor: default; color: #999; background-color: #CCC; background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #cecece), color-stop(1, #CCC)); }
+section#outline form#registration button:disabled:after { content: ""; }
+section#outline form#registration button:disabled:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);  }
+
 hr { border: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); clear: both; }
 
 section#professional-details { width: 420px; margin: 0 auto; }
