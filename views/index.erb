@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>For the love of the web - A modern web workshop with Ben Schwarz</title>
-    <link rel="stylesheet" href="/docs/css/master.css">
+    <link rel="stylesheet" href="/css/master.css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -25,37 +25,26 @@
         <p>At this workshop you’ll learn about new elements, browser techniques, working with styles using new and emerging web standards, and an introduction to modern web typography.</p>
         <p>If you’ve ever wondered if you’re really doing it right, have become cynical to the ways of the 'semantic' or 'open web' or just plain want to get into sync with the platform you work with every day, then this workshop is for you.</p>
         <p>Assumed knowledge is that you’ve written HTML before, the focus will be on the future, not on the past, but everything will be practical and usable now.</p>
-        <aside id="pricing-location">
+        <aside>
           <header>
-            <h3>Pricing <em>&</em> location</h3>
+            <h3>Location</h3>
           </header>
-          <p class="price"><strong>$275</strong> inc GST</p>
           <p>
-            Hosted at <a href="http://www.cogentconsulting.com.au/" title="Read about these damn fine blokes">Cogent Consulting</a><br>
-            <a href="http://maps.google.com.au/maps?q=Level+3,+10+Queen+St+Melbourne&ie=UTF8&hl=en&hq=&hnear=3%2F10+Queen+St,+Melbourne+Victoria+3000&z=16" title="View a map of this location">Level 3, 10 Queen St Melbourne</a>
+            Hosted at <a href="http://www.orbitec.com.au/" title="Read about these damn fine blokes">Orbitec</a><br>
+            <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&q=8%2F120+Sussex+St,+Sydney+New+South+Wales+2000,+Australia&sll=37.0625,-95.677068&sspn=37.683309,67.851563&ie=UTF8&cd=1&geocode=Fd81-_0d3S8DCQ&split=0&hq=&hnear=8%2F120+Sussex+St,+Sydney+New+South+Wales+2000,+Australia&z=16" title="View a map of this location">Level 8, 120 Sussex street, Sydney</a>
           </p>
         </aside>
-        <form id="registration" method="get">
+        <aside id="registration">
           <header>
-            <h3>Registration</h3>
+            <h3>Pricing <em>&</em> Registration</h3>
           </header>
-          
-          <fieldset>
-            <legend>Preferred session</legend>
-            
-            <fieldset class="booked">
-              <input type="radio" value="http://html5workshop.eventwax.com/workshop-a/register" id="workshop-a" name="perferred-session" disabled>
-              <label for="workshop-a"><time datetime="2010-05-15">15th of May</time> (Sold out!)</label>
-            </fieldset>
-            
-            <fieldset>
-              <input type="radio" value="http://html5workshop.eventwax.com/workshop-b/register" id="workshop-b" name="perferred-session" checked>
-              <label for="workshop-b"><time datetime="2010-05-22">22nd of May (9—1pm)</time></label>
-            </fieldset>
-            
-            <button title="Register for a workshop">Register</button>
-          </fieldset>
-        </form>
+          <p class="price"><strong>$300</strong> inc GST</p>
+          <% if sold_out? %>
+            <a class="button sold-out" title="">♥ Sold out</a>
+          <% else %>
+            <a class="button" title="Register for a workshop" href="http://html5workshop.eventwax.com/workshop-sydney/register">Register</a>
+          <% end %>
+        </aside>
       </section>
       <hr>
       <section id="professional-details" class="hcard">
@@ -70,12 +59,10 @@
             <h1>Private workshops</h1>
           </header>
           <p>Interested in having a customised session to get your team up to speed quickly?</p> 
-          <p>Not in Melbourne? <a href="&#109;&#97;&#105;&#108;&#116;&#111;:&#98;&#101;&#110;.&#115;&#99;&#104;&#119;&#97;&#114;&#122;@&#103;&#109;&#97;&#105;&#108;.&#99;&#111;&#109;" title="Send an email to Ben Schwarz" class="email">Contact me</a> about a private workshop.</p>
+          <p>Not in Sydney? <a href="&#109;&#97;&#105;&#108;&#116;&#111;:&#98;&#101;&#110;.&#115;&#99;&#104;&#119;&#97;&#114;&#122;@&#103;&#109;&#97;&#105;&#108;.&#99;&#111;&#109;" title="Send an email to Ben Schwarz" class="email">Contact me</a> about a private workshop.</p>
         </aside>
       </section>
     </div>
-    <script src="/docs/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/docs/js/registration.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

@@ -1,13 +1,13 @@
 @font-face {
 	font-family: 'OFLSortsMillGoudyRegular';
-	src: url('/docs/fonts/OFLGoudyStM.eot');
-	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM'), url('/docs/fonts/OFLGoudyStM.woff') format('woff'), url('/docs/fonts/OFLGoudyStM.ttf') format('truetype');
+	src: url('/fonts/OFLGoudyStM.eot');
+	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM'), url('/fonts/OFLGoudyStM.woff') format('woff'), url('/fonts/OFLGoudyStM.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'OFLSortsMillGoudyItalic';
-	src: url('/docs/fonts/OFLGoudyStM-Italic.eot');
-	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM-Italic'), url('/docs/fonts/OFLGoudyStM-Italic.woff') format('woff'), url('/docs/fonts/OFLGoudyStM-Italic.ttf') format('truetype');
+	src: url('/fonts/OFLGoudyStM-Italic.eot');
+	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM-Italic'), url('/fonts/OFLGoudyStM-Italic.woff') format('woff'), url('/fonts/OFLGoudyStM-Italic.ttf') format('truetype');
 }
 
 body { font-family: "OFLSortsMillGoudyRegular"; margin: 0; padding: 0;  background-image: url("/images/pattern.png"); background-color: #FFFFF1; }
@@ -38,10 +38,12 @@ section#outline header h3 { text-transform: uppercase; text-shadow: 1px 1px 1px 
 section#outline header h3:first-letter { font-size: 120%; }
 section#outline header h3 em { font-family: "OFLSortsMillGoudyItalic"; font-style: italic; }
 
-section#outline aside, section#outline form { width: 200px; float: left; margin-top: 1em; line-height: 1.5em;}
-section#outline aside#pricing-location { margin-right: 20px; text-align: right; }
-section#outline aside#pricing-location p strong { font-weight: normal; font-style: normal; font-size: 2em; color: #666; text-shadow: 1px 1px 1px white; }
-section#outline aside#pricing-location p.price { font-style: italic; }
+section#outline aside, section#outline form { width: 200px; float: left; margin-top: 1em; line-height: 1.5em; font-family: Times;}
+section#outline aside { margin-right: 20px; text-align: right; position: relative; }
+section#outline aside:last-child { margin-right: 0; text-align: left; }
+section#outline aside p strong { font-weight: normal; font-style: normal; font-size: 2em; color: #666; text-shadow: 1px 1px 1px white; }
+section#outline aside p.price { font-style: italic; }
+section#outline aside time { font-style: italic;}
 
 section#outline form#registration fieldset { border: 0; padding: 0; }
 section#outline form#registration fieldset.booked { position: relative; }
@@ -52,13 +54,13 @@ section#outline form#registration legend { margin: 0; padding: 0; }
 section#outline form#registration label { font-style: italic; }
 section#outline aside > p, section#outline legend, section#outline label, section#professional-details p { font-size: 0.8em; }
 
-section#outline form#registration button { border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 0.3em 0.7em; font-size: 0.8em; color: #FFF; text-transform: uppercase; letter-spacing: 0.15em; background-color: #C51020; background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #C51020), color-stop(0.6, #B13333), color-stop(1, #B13333)); -webkit-transition: .2s linear; }
-section#outline form#registration button:after { content: " →"; }
-section#outline form#registration button:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-transition: .2s linear; }
+section#outline button, section#outline a.button { cursor: pointer; cursor: hand; border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 0.3em 0.7em; font-size: 0.8em; color: #FFF; text-transform: uppercase; letter-spacing: 0.15em; background-color: #C51020; background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #C51020), color-stop(0.6, #B13333), color-stop(1, #B13333)); -webkit-transition: .2s linear; }
+section#outline button:after, section#outline a.button:after { content: " →"; }
+section#outline button:hover, section#outline a.button:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); -webkit-transition: .2s linear; }
 
-section#outline form#registration button:disabled { position: absolute; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; top: 1em; -webkit-transform:rotate(-30deg); cursor: default; color: #999; background-color: #CCC; background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #cecece), color-stop(1, #CCC)); }
-section#outline form#registration button:disabled:after { content: ""; }
-section#outline form#registration button:disabled:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);  }
+section#outline a.sold-out { position: absolute; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; top: 1em; -webkit-transform:rotate(-30deg); cursor: default; color: #999; background-color: #CCC; background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #cecece), color-stop(1, #CCC)); }
+section#outline a.sold-out:after { content: ""; }
+section#outline a.sold-out:hover { -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);  }
 
 hr { border: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); clear: both; }
 
