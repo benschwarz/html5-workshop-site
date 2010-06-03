@@ -9,7 +9,7 @@ module Workshop
 
     helpers do
       def sold_out?
-        event_details = JSON.parse(RestClient.get("https://html5workshop:ggghhj@secure.eventwax.com/api/events/workshop-sydney.json"))
+        event_details = JSON.parse(RestClient.get(ENV["SYDNEY_EVENT_URI"]))
         seats_remaining = event_details["event_sessions"].first["capacity"].to_i - event_details["event_sessions"].first["attendees"].length.to_i
 
         (seats_remaining == 0) ? true : false
